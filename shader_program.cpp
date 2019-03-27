@@ -44,6 +44,16 @@ void ShaderProgram::link_program()
     }
 }
 
+unsigned int ShaderProgram::get_shader_program_id()
+{
+    return this->shader_program_id;
+}
+
+void ShaderProgram::user_program()
+{
+    glUseProgram(this->shader_program_id);
+}
+
 ShaderProgram::~ShaderProgram()
 {
     this->shader_program_id = 0;
