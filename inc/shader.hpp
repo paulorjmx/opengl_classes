@@ -1,7 +1,6 @@
 #ifndef SHADER_HPP
     #define SHADER_HPP
         #include <inc/glad/glad.h>
-        #include <GLFW/glfw3.h>
 
         class Shader
         {
